@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8VND</title>
+
+    <!-- file link -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <!-- style link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <section class="sticky top-0 z-10 ">
+        <header class="bg-purple-900 w-full xl:hidden">
+            <div class="top d-flex justify-between h-20">
+                <div class="xl:hidden ">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="logo" class=" cover">
+                    </a>
+                </div>
+
+                <div class="flex justify-center items-center gap-2">
+                    <div class="menu-icon hidden" onclick="OpenNav()">
+                        <i class="fa-solid fa-bars-staggered text-4xl text-gray-100"></i>
+                        <!-- <i class="fa fa-bars "></i> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- navbar -->
+        <nav class="xl:bg-purple-900 bg-gray-800 py-2" id="Nav">
+            <div class="flex justify-around">
+                <div class="col-span-4 flex justify-center items-center logo hidden xl:block">
+                    <a href="#" class=" flex justify-center items-center">
+                        <img src="./img/logo.png" alt="logo" class="w-56">
+                    </a>
+                </div>
+                <!-- navbar -->
+                <div class="close-menu absolute right-2 top-5 hidden" onclick="CloseNav()">
+                    <i class="fa fa-times text-3xl text-gray-100 p-4"></i>
+                </div>
+                <ul class="col-span-8 flex ml-10 flex-col xl:flex-row xl:justify-evenly xl:items-center flex-wrap gap-4 text-gray-100 mt-20 xl:mt-0">
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">ALL GAMES</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">PROMOTIONS</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">TOURNAMENTS</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">VIP</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">SUPPORT</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">ABOUT US</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">PAYMENT</a>
+                    </li>
+                    <li
+                        class="inline-block flex items-center px-1 rounded-full hover:text-yellow-500 duration-300">
+                        <a href="#" class="text-md text-gay-900">REWARDS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </section>
+
+
+ 
+    <div class="col-12 boss">
+        <!-- slide bar -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/Banner/Banner01.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/Banner/Banner02.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Banner/Banner03.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Banner/Banner04.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <div class="Body col-12">
+            <!-- menu bar 2 -->
+            <nav class="navbar2 col-12 d-flex justify-content-center align-items-center">
+                <ul class="mainNavbar2 d-flex justify-content-center mt-2">
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-heart fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">BACCARAT</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-circle-dollar-to-slot fs-4
+                            text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">SLOTS
+                                </div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-dice-five fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">TAIXIU</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-circle fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">XOCDIA</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-fish-fins fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">FISHING</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-brands fa-d-and-d fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">D&T</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-bowling-ball fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">BINGO</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i class="fa-solid fa-apple-whole fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">FRUITNINJA</div>
+                            </span>
+                        </a></li>
+                    <li class="text-warning px-sm-2 py-2"><a href="">
+                            <span class="iconMenu2"><i
+                                    class="fa-solid fa-circle-radiation fs-4 text-warning"></i></span>
+                            <span class="textMenu2">
+                                <div class="menu2 text-warning d-inline">SPINGME</div>
+                            </span>
+                        </a></li>
+                </ul>
+            </nav>
+
+            <div class="mainBody col-xl-8 col-lg-11 col-md-12 mx-auto py-3 px-2">
+                <div class="banner col-4 mx-auto"><img src="./img/bnGame.png" class="cover" alt=""></div>
+                <!-- icon -->
+                <div class="boxIcon col-12 d-flex justify-content-evenly flex-row flex-wrap gap-2">
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_1.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_2.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_3.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_4.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_5.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_6.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_7.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_8.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_9.png" alt="" class="cover"></div>
+                    <div class="icon col-2 mt-2"><img src="./img/icon/Icon_10.png" alt="" class="cover"></div>
+                </div>
+
+                <!-- top winner -->
+                <div class="col-12 my-4 mx-auto"><img src="./img/winnerDeco.png" class="cover" alt=""></div>
+                <div class="topWinner d-flex flex-row justify-content-evenly align-items-center col-12">
+                    <div class="player p-2 d-flex justify-content-evenly align-items-center">
+                        <div class="pfIcon"><img src="./img/pf_1.png" class="cover" alt=""></div>
+                        <div class="text">
+                            <p class="text-white">Jason just won</p>
+                            <p class="text-warning">A$79,980.00</p>
+                            <p class="text-white">In ElvisFrog in Vegas</p>
+                        </div>
+                    </div>
+                    <div class="player p-2 d-flex justify-content-evenly align-items-center">
+                        <div class="pfIcon"><img src="./img/pf_2.png" class="cover" alt=""></div>
+                        <div class="text">
+                            <p class="text-white">Łukasz just won</p>
+                            <p class="text-warning">A$41,480.00</p>
+                            <p class="text-white">In Book of Doom</p>
+                        </div>
+                    </div>
+                    <div class="player p-2 d-flex justify-content-evenly align-items-center">
+                        <div class="pfIcon"><img src="./img/pf_3.png" class="cover" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white">Jason just won</p>
+                            <p class="text-warning">A$38,080.00</p>
+                            <p class="text-white">In Jumbo Joker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content col-12 py-4">
+                <div class="col-xl-8 col-lg-10 col-md-12 px-xl-5 px-lg-4 px-md-3 px-sm-2 px-xs-3 mx-auto ">
+                    <!-- content text -->
+                    <h1 class="text-warning text-center fw-bold my-3 col-10 mx-auto fs-3 fs-md-1">Welcome to 8VND - For the Best Online Casino Games and Bonuses!</h1>
+                    <br>
+                    <h4 class="text-white">So you want to play the <span class="fw-semibold text-info">best online
+                            casino
+                            games</span>? We've got you covered!</h4>
+                    <br>
+                    <h4 class="text-white">Here at <span class="text-warning fw-semibold">8VND</span> Casino we offer
+                        you a
+                        wide range of the <span class="fw-semibold text-info">best online casino games</span>, including
+                        online slots, table, and card games such as Blackjack and Roulette, and loads of others. For the
+                        best and complete gaming experience, we go a step further and host live dealer games such as
+                        live
+                        roulette, live blackjack, and countless others.</h4>
+                    <br>
+                    <h4 class="text-white">Looking to start your gaming adventure with a bonus? You are just in time to
+                        savor your first juicy casino bonus. At <span class="text-warning fw-semibold">8VND</span>
+                        Casino,
+                        we've got nothing but the best online casino promotions and bonuses for all players!</h4>
+                    <!-- question drop content -->
+                    <div class="drop-container py-2">
+                        <!-- q1 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop1">
+                            <h4 class="d-inline my-2 col-11">Why Is 8VND Casino My Best Choice for a Real Money Online
+                                Casino
+                                Gaming Adventure?</h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info"></i>
+                        </div>
+                        <div class="drop-content text-white" id="dropContent1">
+                            <h5 class="textDrop text-white">8VND Casino is a labor of love! We say this confidently as
+                                we
+                                are players and experts with many years of experience in the gambling industry. We are
+                                passionate about our craft and it is in our own best interest to serve you, our valued
+                                customer, in the best possible and most fair way. Our games and products are simply the
+                                best
+                                in the industry. Our customer services are also second to none. To cap it all, we have
+                                implemented the safest and secure payment and online casino systems in the industry to
+                                protect our customers.</h5>
+                        </div>
+                        <!-- q2 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop2">
+                            <h4 class="col-11 d-inline my-2">Are the Online Casino Games at 8VND Casino Fair And
+                                Licensed?</h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info"></i>
+                        </div>
+                        <div class="drop-content text-white " id="dropContent2">
+                            <h5 class="textDrop text-white">8VND Casino is a <span class="text-info">fully licensed
+                                    online
+                                    casino</span> and we adhere to all the set rules and regulations required for this
+                                license. All <span class="text-info">online casino games</span> at 8VND Casino are
+                                likewise
+                                from trusted game developers that own all necessary licenses in order to operate
+                                legally.
+                                This license is a guarantee that all activities and transactions within 8VND Casino are
+                                credible, safe, and secure.</h5>
+                        </div>
+                        <!-- q3 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop3">
+                            <h4 class="col-11 d-inline my-2">Does 8VND Casino have online casino bonuses?</h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info"></i>
+                        </div>
+                        <div class="drop-content text-white " id="dropContent3">
+                            <h5 class="textDrop text-white">You bet. First of all, every new player gets our <span
+                                    class="text-info">Welcome Bonus</span>. The bonus totals at <span class="fw-bold">up
+                                    to
+                                    ₫/$1000 </span>, split up over your first 4 deposits. With that comes a
+                                complementary
+                                <span class="fw-bold">Free Spin bonus</span> for your first deposit. Additionally, we
+                                have a
+                                lot of other recurring bonus offers such as Sunday reloads and Wednesday <span
+                                    class="fw-bold">freespins</span>. And to top it all off, our <span
+                                    class="text-info">VIP
+                                    program</span> provides you with many cool <span class="text-info">casino
+                                    bonuses</span>.
+                            </h5>
+                        </div>
+                        <!-- q4 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop4">
+                            <h4 class="col-11 d-inline my-2">Can I Use My Mobile Device to Play at 8VND Casino?</h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info"></i>
+                        </div>
+                        <div class="drop-content text-white " id="dropContent4">
+                            <h5 class="textDrop text-white">Yes, you can. 8VND Casino is built from the ground up to be
+                                fully responsive to all mobile device operating systems. It does not matter if you use
+                                an
+                                Android, iOS, Windows or other type of device. Just visit our site from your mobile
+                                device's
+                                web browser and play <span class="text-info">mobile slots</span>, <span
+                                    class="text-info">mobile
+                                    live casino</span>, or any other <span class="text-info">online
+                                    casino games with real money</span>.
+                            </h5>
+                        </div>
+                        <!-- q5 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop5">
+                            <h4 class="col-11 d-inline my-2">Is Depositing and Withdrawing Money at 8VND Casino Safe
+                                and Fast?
+                            </h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info"></i>
+                        </div>
+                        <div class="drop-content text-white " id="dropContent5">
+                            <h5 class="textDrop text-white">Absolutely Yes! First of all, note that all pages that you
+                                visit
+                                on 8VND.com, are secured with SSL (Secure Socket Layer) encryption certificates. This
+                                already makes 8VND Casino a <span class="text-info">secure online casino</span>. In
+                                addition to this, all payment processes are managed to standardized security protocols.
+                                Your
+                                transactions on 8VND.com are just as secure as they are on any other trusted and
+                                renowned
+                                website. <br><br> Our payment services are above standard as we aim to process your
+                                deposits
+                                and withdrawals without any delays. We also offer convenient, secure, and diverse
+                                payment
+                                options including supporting major cryptocurrencies. Should there be any delays, you
+                                only
+                                have to contact us and it will be sorted out. Our dedicated team of <span
+                                    class="text-info">support staff</span> will certainly handle all of your
+                                verification,
+                                depositing, and withdrawal inquiries within a quick turnaround timeframe.</h5>
+                        </div>
+                        <!-- q6 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop6">
+                            <h4 class="col-11 d-inline my-2">How Can I Get in Touch With the 8VND Customer Support?
+                            </h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info"></i>
+                        </div>
+                        <div class="drop-content text-white " id="dropContent6">
+                            <h5 class="textDrop text-white">We take great pride in our customers and hence we are always
+                                ready to assist you. You have a problem logging into your account, or you would like to
+                                get
+                                more information about our bonuses? There is no big or small query to us and you should
+                                always feel free to approach us. What's more, we have different options and you can use
+                                any
+                                of the customer support options provided. The easiest and fastest way to contact our
+                                support
+                                team is to use our Live Chat feature. Additionally, you can use our <span
+                                    class="text-info">contact form here</span> or just write us directly at
+                                support@8VND.com. Our <span class="text-info">handy FAQ</span> section also contains
+                                more
+                                information about our operations, so make a point to check it out.</h5>
+                        </div>
+                        <!-- q7 -->
+                        <div class="qstion my-3 text-white align-items-center rounded-4 px-3 py-3" id="drop7">
+                            <h4 class="col-11 d-inline my-2">What Makes 8VND Casino Better than Any Other Real Money
+                                Online
+                                Casino?</h4>
+                            <i class="fa-solid fa-chevron-down drop-button float-end fs-3 text-info text-center "></i>
+                        </div>
+                        <div class="drop-content text-white " id="dropContent7">
+                            <h5 class="textDrop text-white">We are not going to throw a long marketing pitch at you.
+                                Many
+                                great casinos exist online. 8VND Casino, however, brings a bit of fresh air into the
+                                scene
+                                and makes your online gaming experience an adventure, a journey of progression. You
+                                might
+                                ask, how do we do it differently? Here's our simple recipe for success: our most
+                                valuable
+                                assets are the people that work with us. We value having a close relationship with you,
+                                our
+                                valued customer. We are always here for you, to help you and to guide you to a safe and
+                                fun
+                                gaming experience as you play <span class="text-info">new casino games online</span>. We
+                                go
+                                above and beyond in giving you detailed, comprehensible, and user-friendly support. Try
+                                us
+                                today, play casino games with us and you will be riding on success within no time.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer col-12 py-4">
+                <div class="col-xl-7 col-lg-9 col-sm-10 col-xs-11 mx-auto d-flex flex-row">
+                    <div class="col-3 text-white">
+                        <h5 class="fw-semibold">Games</h5>
+                        <h6 class="mt-1">Slots</h6>
+                        <h6>Baccarat</h6>
+                        <h6>Spin Game</h6>
+                        <h6>Xoc Dia</h6>
+                        <h6>Tai Xiu</h6>
+                        <h6>Black Jack</h6>
+                        <h6>Fishing</h6>
+                        <h6>Dragon and Tiger</h6>
+                        <h6>Fruit Ninja</h6>
+                        <h6>Bingo</h6>
+                        <h6>Lottery</h6>
+                    </div>
+                    <div class="col-3 text-white">
+                        <h5 class="fw-semibold">Promotions</h5>
+                        <h6 class="mt-1">Promotions</h6>
+                        <h6>VIP</h6>
+                    </div>
+                    <div class="col-3 text-white">
+                        <h5 class="fw-semibold">Info</h5>
+                        <h6 class="mt-1">About Us</h6>
+                        <h6>Payments</h6>
+                        <h6>Terms and Condition</h6>
+                        <h6>Privacy Policy</h6>
+                        <h6>Affiliates</h6>
+                        <h6>Bonus Policy</h6>
+                        <h6>Casino News</h6>
+                    </div>
+                    <div class="col-3 text-white">
+                        <h5 class="fw-semibold">Help</h5>
+                        <h6 class="mt-1">Support</h6>
+                        <h6>FAQ</h6>
+                        <h6>Responsible Gaming</h6>
+                    </div>
+                </div>
+            </div>
+            <footer class="cpfooter text-white-50 bg-black text-center px-xl-5 px-lg-4 px-md-3 px-sm-2 px-xs-3 py-2">
+                Copyright ©
+                2023 8VND All Rights Reserved</footer>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+<script>
+
+    function OpenNav() {
+        document.getElementById("Nav").style.width = "80%";
+    }
+    function CloseNav() {
+        document.getElementById("Nav").style.width = "0%";
+    }
+
+    $("#drop1").click(function () {
+        $("#dropContent1").slideToggle(500);
+    });
+    $("#drop2").click(function () {
+        $("#dropContent2").slideToggle(500);
+    });
+    $("#drop3").click(function () {
+        $("#dropContent3").slideToggle(500);
+    });
+    $("#drop4").click(function () {
+        $("#dropContent4").slideToggle(500);
+    });
+    $("#drop5").click(function () {
+        $("#dropContent5").slideToggle(500);
+    });
+    $("#drop6").click(function () {
+        $("#dropContent6").slideToggle(500);
+    });
+    $("#drop7").click(function () {
+        $("#dropContent7").slideToggle(500);
+    });
+
+</script>
+
+</html>

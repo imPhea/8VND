@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    letter-spacing: .3px;
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.qstion {
+    border: #502978 2px solid;
+}
+.textDrop {
+    padding: 10px 20px;
+}
+
+/* nav bar */
+.mainNavbar {
+    width: 100%;
+    height: 70px;
+    background: #2d2645;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.navMenu {
+    transition: .3s;
+}
+.mainNavbar .navLeft {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.mainNavbar .navLeft .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainNavbar .navLeft .navBar{
+    height: 100%;
+}
+.mainNavbar .navLeft .navBar ul{
+    display: flex;
+    align-items: center;
+}
+.mainNavbar .navLeft .navBar ul li{
+    padding: 10px;
+
+}
+.mainNavbar .navLeft .navBar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.mainNavbar .navLeft .navBar ul li:hover>a{
+    color: gold;
+}
+
+/* body */
+.Body {
+    background-image: url(../img/Body.png);
+    background-repeat: no-repeat;
+}
+.navbar2 {
+    background: #110624;    
+}
+.navbar2 ul li a{
+    text-decoration: none;
+}
+.navbar2 ul li{
+    margin: 0 5px;
+    /* border-right: 2px solid #fff; */
+    transition: .3s;
+}
+.navbar2 ul li:hover{
+    background: #4a3f79;
+    transform: scale(1.024);
+}
+.pfIcon {
+    height: 130px;
+}
+.player {
+    background: #432a52;
+}
+.content {
+    background: #281543;
+}
+.text-white {
+    line-height: 150%;
+}
+.drop-content{
+    display: none;
+    cursor: text;
+}
+.qstion{
+    cursor: pointer;
+}
+.qstion:hover {
+    background: #38166d;
+}
+.qstion, .icon:hover {
+    transform: scale(1.024);
+}
+.footer {
+    background: #150b26;
+}
+.footer h6:hover {
+    color: gray;
+}
+h6, h5{
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+/* navbar */
+@media (max-width: 1200px) {
+    .topWinner h5{
+        font-size: 1.2em;
+    }
+    .topWinner h4{
+        font-size: 1.3em;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .navMenu {
+        position: fixed;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 500px;
+        width: 250px;
+        background: #281543;
+        top: -10px;
+        left: -100%;
+        z-index: 5;
+        text-align: center;
+        padding: 0px 0;
+    }
+    .xIcon {
+        width: 90%;
+        margin-bottom: 10px; 
+        display: block;
+    }
+    .navMenu li a {
+        font-size: 1.1em;
+    }
+    .navMenu li {
+        display: block;
+        border: none;
+    }
+    a:hover,
+    a.active {
+        background: none;
+    }
+    #check:checked ~ .navMenu {
+        left: 0;
+    }
+}
+.mainBody .banner {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation: link-img 1s ease infinite;
+}
+@keyframes link-img {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.player, .icon{
+    cursor: pointer;
+    transition: .3s;
+}
+.icon:hover {
+    transform: scale(1.05);
+}
+.player:hover{
+    background: #58229e;
+    transform: scale(1.024);
+}
+.mainNavbar2 {
+    flex-direction: row;
+}
+
+.navbar2 {
+    margin-top: -5px;
+    height: 60px !important;
+}
+.player .text {
+    margin-top: -15px !important;
+}
+
+
+
+
+
+/* ============================================================= */
+/* Responsive */
+@media (min-width: 200px) and (max-width: 480px){
+    header .top{
+        padding: 10px;
+    }
+    header .top .menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: fixed !important;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: relative;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding: 0px !important;
+    }
+    nav .close-menu{
+        display: block;
+    }
+    nav .menu{
+        width: 100%;
+        padding-top: 60px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+
+}
+@media (min-width: 481px) and (max-width: 767px){
+    header .top{
+        padding: 10px;
+    }
+    header .top .menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: fixed !important;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: relative;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding: 0px !important;
+    }
+    nav .close-menu{
+        display: block;
+    }
+    nav .menu{
+        width: 100%;
+        padding-top: 60px;
+    }
+    nav .menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 1280px){
+    header .top{
+        padding: 10px;
+    }
+    header .top .menu-icon{
+        display: block;
+    }
+
+    nav{
+        position: fixed !important;
+        width: 0%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: relative;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding: 0px !important;
+    }
+    nav .close-menu{
+        display: block;
+    }
+    nav .menu{
+        width: 100%;
+        padding-top: 60px;
+    }
+    .menu2 {
+        margin-left: -500px !important;
+    }
+    nav .menu ul li{
+        width: 100%;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+
+}
